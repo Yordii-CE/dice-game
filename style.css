@@ -1,0 +1,13 @@
+.title-game{
+    color: rgb(230, 230, 230);
+    margin-left: 60px;
+}
+
+.pictures div img{
+    width: 300px;
+    height: 300px; 
+}
+
+.bar-info{
+    width: 250px !important;
+}

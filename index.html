@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container mt-3 ">
+        <h3 class="title-game">DICE GAME</h3>
+        <div class="d-flex justify-content-center">
+            <div>
+                <div id="picture-container" class="pictures invisible d-flex justify-content-around align-items-center">
+                    <div>
+                        <img id="picture1" src="images/dice_1.png" alt="dice 1">
+                    </div>
+                    <div>
+                        <img id="picture2" src="images/dice_2.png" alt="dice 2">
+                    </div>
+                    <div>
+                        <img id="picture3" src="images/dice_3.png" alt="dice 3">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end mx-2">
+                    <h6>Total: <span id="total">0</span></h6>
+                </div>
+                <div class="mt-5 justify-content-center align-items-center d-flex">
+                    <div class="d-flex w-25 justify-content-end align-items-center mx-1">        
+                        <i role="button" class="mx-2 fa-solid fa-circle-info" data-toggle="tooltip" data-placement="top" title="Points will accumulate"></i>
+                        <button id="btn-play" class="w-50 btn btn-primary">Play</button>
+                    </div>
+                 
+                    <div class="d-flex w-25 justify-content-start align-items-center mx-1">        
+                        <button id="btn-reset" class="w-50 btn btn-warning">Reset</button>
+                        <i role="button" class="mx-2 fa-solid fa-circle-info" data-toggle="tooltip" data-placement="top" title="Resets the score to 0"></i>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="bar-info h-50 mt-3 mx-4">
+                <div id="bond-container" class="d-none card">
+                    <div class="card-header">
+                        <p class="card-title text-secondary font-weight-light">                
+                            Earned bonuses
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <span id="bond1" class="d-none">
+                            2 dice have the same value
+                            <small class="badge p-1 text-white bg-info rounded">+5 points</small>
+                        </span>
+                        <br />
+                        <span id="bond2" class="d-none">
+                            3 dice have the same value
+                            <small class="badge p-1 text-white bg-info rounded">+10 points</small>
+                        </span>
+                    </div>
+                </div> 
+                <div class="mt-2">
+                    <div>
+                        <h6 class="text-primary">                
+                            Score : <span id="score">0</span>
+                        </h6>
+                    </div>
+                    <div>
+                        <h6 class="text-primary">                
+                            Accumulated Score : <span id="accumulated-score">0</span>
+                        </h6>
+                    </div>
+                </div> 
+    
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js" type="module"></script>
+</body>
+</html>
