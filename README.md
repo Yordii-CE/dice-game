@@ -1,4 +1,4 @@
-<span style="color:green;">Try it</span> ▶️ [https://yordii-ce.github.io/dice-game/](https://yordii-ce.github.io/dice-game/)
+Try it ▶️ [https://yordii-ce.github.io/dice-game/](https://yordii-ce.github.io/dice-game/)
 ### Details
 - Lambda
 - API Gateway
