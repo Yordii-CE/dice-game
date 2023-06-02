@@ -1,4 +1,3 @@
-jhenicita
 Try it ▶️ [https://yordii-ce.github.io/dice-game/](https://yordii-ce.github.io/dice-game/)
 ### Details
 - Lambda
